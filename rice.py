@@ -1,8 +1,6 @@
 import cv2 as cv
 import numpy as np
 import os
-import matplotlib as plt
-
 images_path = "./rice_images"
 names = os.listdir(images_path)
 images = [cv.imread(i) for i in [os.path.join(images_path, j) for j in os.listdir(images_path)]]
